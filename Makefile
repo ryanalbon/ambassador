@@ -691,7 +691,7 @@ clean-test:
 	rm -f $(CLAIM_FILE)
 	$(call kill_teleproxy)
 
-test: setup-develop envoy-tests
+test: setup-develop
 	cd ambassador && \
 	AMBASSADOR_DOCKER_IMAGE="$(AMBASSADOR_DOCKER_IMAGE)" \
 	BASE_PY_IMAGE="$(BASE_PY_IMAGE)" \
